@@ -1,0 +1,13 @@
+
+train_sft:
+  model: models/original_model/Qwen3-8B
+  train_file: data/sft/stage5/train.parquet
+  val_file: data/sft/stage5/val.parquet
+  max_length: 4096
+  truncation: left
+  train_max_samples: 1
+  val_max_samples: 1
+  total_training_steps: 1
+  logger:
+    - console
+    - wandb

@@ -1,0 +1,4 @@
+
+rollout:
+  max_steps: 20
+  namespace_format: "{run_id}:{case_id}:{rollout_id}"

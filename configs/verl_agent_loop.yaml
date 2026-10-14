@@ -1,0 +1,8 @@
+
+# verl async multi-turn rollout 会读取这个文件，把 agent loop 注册名解析成 Python 类。
+# `name` 必须和 scripts/train_grpo_verl.py 里的
+# actor_rollout_ref.rollout.agent.default_agent_loop=industrial_posttrain_agent 一致。
+- name: industrial_posttrain_agent
+  # `_target_` 是本项目真正的 adapter 类。它继承 verl AgentLoopBase，
+  # 在 token 生成之间插入工具执行、observation 回放、verifier reward 和 artifact 落盘。
+  _target_: train.verl_agent_loop_adapter.IndustrialPosttrainAgentLoop

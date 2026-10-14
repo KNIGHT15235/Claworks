@@ -1,0 +1,13 @@
+
+models:
+  default_provider: vllm
+  original_model_path: models/original_model
+  vllm:
+    base_url: ${VLLM_BASE_URL}
+    model: ${VLLM_MODEL}
+  qwen_judge:
+    base_url: ${QWEN_BASE_URL}
+    model: ${QWEN_MODEL}
+  deepseek_judge:
+    base_url: ${DEEPSEEK_BASE_URL}
+    model: ${DEEPSEEK_MODEL}

@@ -1,0 +1,25 @@
+
+.env
+.env.*
+!.env.example
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+logs/
+wandb/
+data/metrics_verl/
+data/tensorboard_verl/
+models/original_model/
+experiments/runs/
+experiments/reports/
+
+# Training datasets are distributed separately from source code.
+/data/
+/runs/
+/checkpoints/*
+!/checkpoints/.gitkeep
+/models/*
+!/models/.gitkeep

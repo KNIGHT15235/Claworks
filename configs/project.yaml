@@ -1,0 +1,5 @@
+
+project:
+  name: industrial_posttrain_training
+  version: stage1
+  seed: 42

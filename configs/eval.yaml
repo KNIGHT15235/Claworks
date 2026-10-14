@@ -1,0 +1,11 @@
+
+eval:
+  dataset: data/rl/eval/train.parquet
+  rollout_root: data/evals
+  metrics:
+    - reward_mean
+    - parse_error_rate
+    - tool_error_rate
+    - max_step_hit_rate
+  judge_provider_env: VERIFIER_PROVIDER
+  max_samples: -1

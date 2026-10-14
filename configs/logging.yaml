@@ -1,0 +1,13 @@
+
+logging:
+  rollout_dir: logs/rollout
+  train_dir: logs/train
+  eval_dir: logs/eval
+  verl_dir: logs/verl
+  tensorboard_dir: data/tensorboard_verl
+  verl_file_logger_root: data/metrics_verl
+  wandb:
+    project: industrial_posttrain_training
+    entity_env: WANDB_ENTITY
+    api_key_env: WANDB_API_KEY
+    mode_env: WANDB_MODE

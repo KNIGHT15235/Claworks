@@ -1,0 +1,15 @@
+
+train_grpo:
+  model: models/original_model/Qwen3-8B
+  train_file: data/rl/stage5/train.parquet
+  val_file: data/rl/eval/train.parquet
+  agent_loop_config_path: configs/verl_agent_loop.yaml
+  default_agent_loop: industrial_posttrain_agent
+  rollout_n: 2
+  max_prompt_length: 8192
+  max_response_length: 4096
+  total_training_steps: 1
+  rollout_artifact_root: data/rollouts_verl
+  logger:
+    - console
+    - wandb
